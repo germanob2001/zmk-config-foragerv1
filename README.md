@@ -1,11 +1,6 @@
 # zmk-config
 > zmk setup for my own keyboards
 
-## Roadmap
-- [ ] integrate modular setup (see [caksoylar - zmk-config](https://github.com/caksoylar/zmk-config))
-- [ ] setup [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
-- [ ] integrate first combos
-
 ## Supported Keyboards
 - [Fifi (own shield)](https://github.com/raychengy/fifi_split_keeb)
 - [Corne Ish Zen](https://lowprokb.ca/products/corne-ish-zen)
