@@ -1,0 +1,17 @@
+if SHIELD_FIFI_LEFT
+
+# only the main side is assigned a name
+config ZMK_KEYBOARD_NAME
+	default "Fifi"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+  default y
+
+endif
+
+if SHIELD_FIFI_LEFT || SHIELD_FIFI_RIGHT
+
+config ZMK_SPLIT
+  default y
+
+endif
