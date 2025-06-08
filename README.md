@@ -8,7 +8,7 @@
 
 ## Supported Keyboards
 - [Fifi (own shield)](https://github.com/raychengy/fifi_split_keeb)
-- ~[Corne Ish Zen](https://lowprokb.ca/products/corne-ish-zen)~ - WIP
+- [Corne Ish Zen](https://lowprokb.ca/products/corne-ish-zen)
 - ~[Dactyl Manuform](https://github.com/abstracthat/dactyl-manuform)~ - WIP
 
 ## Homerow Mods (HRM)
@@ -81,3 +81,4 @@
 - [caksoylar - zmk-config](https://github.com/caksoylar/zmk-config)
 - [ZMK - Own Keyboard Shield](https://zmk.dev/docs/development/hardware-integration/new-shield?keyboard-type=split)
 - [manna-harbour - Miryoku](https://github.com/manna-harbour/miryoku_zmk)
+- [Original Home Row Mods Post](https://precondition.github.io/home-row-mods)
