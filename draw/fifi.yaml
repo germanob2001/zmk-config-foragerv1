@@ -1,0 +1,224 @@
+layout: {zmk_keyboard: fifi}
+layers:
+  DEF:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: A, h: Gui}
+  - {t: R, h: Alt}
+  - {t: S, h: Ctrl}
+  - {t: T, h: Shift}
+  - G
+  - M
+  - {t: N, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
+  - {t: O, h: Gui}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - ⌦
+  - {t: ⌫, h: NAV}
+  - ↹
+  - {t: ␣, h: SYM}
+  - {t: ⏎, h: NUM}
+  - {t: Esc, h: FUN}
+  NAV:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Page ↓
+  - Page ↑
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
+  - {t: ▽, type: trans}
+  - ←
+  - ↓
+  - ↑
+  - →
+  - {t: ▽, type: trans}
+  - Undo
+  - Cut
+  - Copy
+  - Ctl+V
+  - Ctl+Y
+  - Insert
+  - Home
+  - End
+  - Caps Lock
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ␣
+  - ⏎
+  - Esc
+  SYM:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - +
+  - '='
+  - _
+  - '-'
+  - ':'
+  - {t: ▽, type: trans}
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
+  - ^
+  - '&'
+  - '*'
+  - '~'
+  - '`'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '|'
+  - ;
+  - ⌫
+  - \
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  NUM:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '['
+  - ']'
+  - {t: ▽, type: trans}
+  - ','
+  - '7'
+  - '8'
+  - '9'
+  - +
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - .
+  - '4'
+  - '5'
+  - '6'
+  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '{'
+  - '}'
+  - {t: ▽, type: trans}
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '*'
+  - ⌦
+  - ⌫
+  - ↹
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  FUN:
+  - F12
+  - F7
+  - F8
+  - F9
+  - {t: ▽, type: trans}
+  - BT CLR
+  - BT 1
+  - BT 2
+  - BT 3
+  - Boot
+  - F11
+  - F4
+  - F5
+  - F6
+  - {t: ▽, type: trans}
+  - '&tog_on 5'
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
+  - F10
+  - F1
+  - F2
+  - F3
+  - {t: ▽, type: trans}
+  - '&tog_off 5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  QWE:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: Gui}
+  - {t: S, h: Alt}
+  - {t: D, h: Ctrl}
+  - {t: F, h: Shift}
+  - G
+  - H
+  - {t: J, h: Shift}
+  - {t: K, h: Ctrl}
+  - {t: L, h: Alt}
+  - {t: '''', h: Gui}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ⌦
+  - {t: ⌫, h: NAV}
+  - ↹
+  - {t: ␣, h: SYM}
+  - {t: ⏎, h: NUM}
+  - {t: Esc, h: FUN}

@@ -70,6 +70,16 @@
 
 ## Keymap
 > keymap automatically drawn with [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
+![Keymap](./draw/fifi.svg?raw=true "Keymap")
+
+### Generate locally for debugging
+- `keymap -c draw/config.yaml parse -z config/<kb>.keymap > <kb>_keymap.yaml`
+- `keymap -c draw/config.yaml draw -d boards/shields/<kb>/<kb>.dtsi <kb>_keymap.yaml > <kb>_keymap.svg`
+    - `-d` is only required if it's a custom shield
+
+## Custom shields
+- make sure to add a [`keys` property to your physical layout for key positions](https://zmk.dev/docs/development/hardware-integration/physical-layouts#optional-keys-property)
+- see [draw-keymaps.yml](./.github/workflows/draw-keymaps.yml) for workflow setup for custom shields
 
 ## References
 - [urob - zmk-config](https://github.com/urob/zmk-config)
@@ -77,3 +87,5 @@
 - [ZMK - Own Keyboard Shield](https://zmk.dev/docs/development/hardware-integration/new-shield?keyboard-type=split)
 - [manna-harbour - Miryoku](https://github.com/manna-harbour/miryoku_zmk)
 - [Original Home Row Mods Post](https://precondition.github.io/home-row-mods)
+- [caksoylar - Tool for ZMK physical layout conversion](https://zmk-physical-layout-converter.streamlit.app/)
+- [caksoylar - Keymap Drawer](https://github.com/caksoylar/keymap-drawer/tree/main)
