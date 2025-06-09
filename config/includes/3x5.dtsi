@@ -34,16 +34,6 @@
       hold-trigger-on-release;
       require-prior-idle-ms = <175>;
     };
-    hsl: home_row_mods_shift_l {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      tapping-term-ms = <200>; // <-
-      quick-tap-ms = <150>;
-      flavor = "balanced";
-      bindings = <&kp>, <&kp>;
-      hold-trigger-key-positions = <KEYS_R THUMBS>;
-      hold-trigger-on-release;
-    };
     hmr: home_row_mods_r {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
@@ -54,16 +44,6 @@
       hold-trigger-key-positions = <KEYS_L THUMBS>;
       hold-trigger-on-release;
       require-prior-idle-ms = <175>;
-    };
-    hsr: home_row_mods_shift_r {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      tapping-term-ms = <200>; // <-
-      quick-tap-ms = <150>;
-      flavor = "balanced";
-      bindings = <&kp>, <&kp>;
-      hold-trigger-key-positions = <KEYS_L THUMBS>;
-      hold-trigger-on-release;
     };
     lt: layer_tap {
       display-name = "Layer-Tap";
@@ -104,7 +84,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp Q,        &kp W,        &kp F,        &kp P,        &kp B,            &kp J,        &kp L,        &kp U,        &kp Y,        &kp SQT,      \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &hml LGUI A,  &hml LALT R,  &hml LCTRL S, &hsl LSHFT T, &kp G,            &kp M,        &hsr RSHFT N, &hmr RCTRL E, &hmr LALT I,  &hmr RGUI O,  \
+     &hml LGUI A,  &hml LALT R,  &hml LCTRL S, &hml LSHFT T, &kp G,            &kp M,        &hmr RSHFT N, &hmr RCTRL E, &hmr LALT I,  &hmr RGUI O,  \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp Z,        &kp X,        &kp C,        &kp D,        &kp V,            &kp K,        &kp H,        &kp COMMA,    &kp DOT,      &kp SLASH,    \
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -119,7 +99,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp Q,        &kp W,        &kp E,        &kp R,        &kp T,            &kp Y,        &kp U,        &kp I,        &kp O,        &kp P,        \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &hml LGUI A,  &hml LALT S,  &hml LCTRL D, &hsl LSHFT F, &kp G,            &kp H,        &hsr RSHFT J, &hmr RCTRL K, &hmr LALT L,  &hmr RGUI SQT, \
+     &hml LGUI A,  &hml LALT S,  &hml LCTRL D, &hml LSHFT F, &kp G,            &kp H,        &hmr RSHFT J, &hmr RCTRL K, &hmr LALT L,  &hmr RGUI SQT, \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp Z,        &kp X,        &kp C,        &kp V,        &kp B,            &kp N,        &kp M,        &kp COMMA,    &kp DOT,      &kp FSLH,     \
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
