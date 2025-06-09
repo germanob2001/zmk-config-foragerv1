@@ -77,7 +77,7 @@
 - `keymap -c draw/config.yaml draw -d boards/shields/<kb>/<kb>.dtsi <kb>_keymap.yaml > <kb>_keymap.svg`
     - `-d` is only required if it's a custom shield
 
-## Custom shields
+### Custom shields
 - make sure to add a [`keys` property to your physical layout for key positions](https://zmk.dev/docs/development/hardware-integration/physical-layouts#optional-keys-property)
 - see [draw-keymaps.yml](./.github/workflows/draw-keymaps.yml) for workflow setup for custom shields
 
