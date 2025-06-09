@@ -28,10 +28,6 @@
 - try to put heavier loads on left thumb instead of right thumb (smartphone usage)
 - sources can be found in [References](#references)
 
-
-
-
-
 ## Homerow Mods (HRM)
 > see an awesome explaination at [urob - zmk-config](https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods)
 - can lead to misfires on inconsistent typing speeds
