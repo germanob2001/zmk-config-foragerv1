@@ -6,6 +6,32 @@
 - [Corne Ish Zen](https://lowprokb.ca/products/corne-ish-zen)
 - ~[Dactyl Manuform](https://github.com/abstracthat/dactyl-manuform)~ - WIP
 
+## General Principles
+- usage of [**Homerow Mods**](#homerow-mods-(hrm))
+- keep [thumb health](#thumb-health) in mind
+- **combos**:
+    - only use combos with multiple fingers (horizontal combos)
+    - try to avoid pinkies
+    - `require-prior-idle-ms` solves the issue of combo misfires, even on the home row
+- support **left hand only** usage
+    - combos on left hand side that work well with right-handed mouse usage (cut, copy, paste, esc)
+    - common shortcuts and desktop operations
+
+### Thumb Health
+- place only two to three keys in arc thumb naturally sweeps
+- don't stretch to keys under palm/beyond index-column
+    - **bending the thumb/stretching far shows up frequently in pain reports**
+    - only use low-frequency functions or nothing at all
+- put high-frequency key under thumb's resting position (e.g. spacebar)
+- minimize sustained holds -> combination of layers and combos
+- design/choose a thumb cluster for your own hand size
+- try to put heavier loads on left thumb instead of right thumb (smartphone usage)
+- sources can be found in [References](#references)
+
+
+
+
+
 ## Homerow Mods (HRM)
 > see an awesome explaination at [urob - zmk-config](https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods)
 - can lead to misfires on inconsistent typing speeds
@@ -59,15 +85,6 @@
 - false positives (same-hand): increase tapping-term-ms
 - false positives (cross-hand): increase require-prior-idle-ms (or set flavor to `tap-preferred`, which requires holding HRMs past tapping term to activate)
 
-## Using combos instead of layers
-> might be more comfortable instead of doing frequent layer switches (less thumb movements)
-> currently working on integrating those if useful
-- `require-prior-idle-ms` solves the issue of combo misfires, even on the home row
-- principles:
-    - should be easy to access and easy to remember
-    - combos on left hand side that work well with right-handed mouse usage (cut, copy, paste, esc)
-    - only use combos with multiple fingers (horizontal combos)
-
 ## Keymap
 > keymap automatically drawn with [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
 ![Keymap](./draw/fifi.svg?raw=true "Keymap")
@@ -82,10 +99,16 @@
 - see [draw-keymaps.yml](./.github/workflows/draw-keymaps.yml) for workflow setup for custom shields
 
 ## References
-- [urob - zmk-config](https://github.com/urob/zmk-config)
-- [caksoylar - zmk-config](https://github.com/caksoylar/zmk-config)
-- [ZMK - Own Keyboard Shield](https://zmk.dev/docs/development/hardware-integration/new-shield?keyboard-type=split)
-- [manna-harbour - Miryoku](https://github.com/manna-harbour/miryoku_zmk)
-- [Original Home Row Mods Post](https://precondition.github.io/home-row-mods)
-- [caksoylar - Tool for ZMK physical layout conversion](https://zmk-physical-layout-converter.streamlit.app/)
-- [caksoylar - Keymap Drawer](https://github.com/caksoylar/keymap-drawer/tree/main)
+- zmk-config
+    - [urob - zmk-config](https://github.com/urob/zmk-config)
+    - [caksoylar - zmk-config](https://github.com/caksoylar/zmk-config)
+- zmk
+    - [ZMK - Own Keyboard Shield](https://zmk.dev/docs/development/hardware-integration/new-shield?keyboard-type=split)
+    - [caksoylar - Tool for ZMK physical layout conversion](https://zmk-physical-layout-converter.streamlit.app/)
+    - [caksoylar - Keymap Drawer](https://github.com/caksoylar/keymap-drawer/tree/main)
+- Layout
+    - [manna-harbour - Miryoku](https://github.com/manna-harbour/miryoku_zmk)
+    - [Original Home Row Mods Post](https://precondition.github.io/home-row-mods)
+- Thumb Health
+    - [Getreuer - Blog Post on Thumb Health with Examples](https://getreuer.info/posts/keyboards/thumb-ergo/index.html#countermeasures)
+    - [Study - Smartphone Use - Hand Pain](https://pubmed.ncbi.nlm.nih.gov/39044247/)
