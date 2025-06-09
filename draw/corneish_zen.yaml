@@ -37,6 +37,43 @@ layers:
   - {t: ␣, h: SYM}
   - {t: ⏎, h: NUM}
   - {t: Esc, h: FUN}
+  QWE:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: Gui}
+  - {t: S, h: Alt}
+  - {t: D, h: Ctrl}
+  - {t: F, h: Shift}
+  - G
+  - H
+  - {t: J, h: Shift}
+  - {t: K, h: Ctrl}
+  - {t: L, h: Alt}
+  - {t: '''', h: Gui}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ⌦
+  - {t: ⌫, h: NAV}
+  - ↹
+  - {t: ␣, h: SYM}
+  - {t: ⏎, h: NUM}
+  - {t: Esc, h: FUN}
   NAV:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -185,40 +222,3 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  QWE:
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: A, h: Gui}
-  - {t: S, h: Alt}
-  - {t: D, h: Ctrl}
-  - {t: F, h: Shift}
-  - G
-  - H
-  - {t: J, h: Shift}
-  - {t: K, h: Ctrl}
-  - {t: L, h: Alt}
-  - {t: '''', h: Gui}
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - ⌦
-  - {t: ⌫, h: NAV}
-  - ↹
-  - {t: ␣, h: SYM}
-  - {t: ⏎, h: NUM}
-  - {t: Esc, h: FUN}
