@@ -12,36 +12,33 @@ parse_config:
     '&tog_on QWE': QWE On
     '&tog_off QWE': QWE Off
 
-    # '&mmv MOVE_UP': Mouse ↑
-    # '&mmv MOVE_DOWN': Mouse ↓
-    # '&mmv MOVE_LEFT': Mouse ←
-    # '&mmv MOVE_RIGHT': Mouse →
-    #
-    # '&msc SCRL_UP': Scroll ↑
-    # '&msc SCRL_DOWN': Scroll ↓
-    # '&msc SCRL_LEFT': Scroll ←
-    # '&msc SCRL_RIGHT': Scroll →
-    #
-    # '&mkp LCLK': Left Click
-    # '&mkp RCLK': Right Click
-    # '&mkp MCLK': Middle Click
-    # '&mkp MB4': Back Click
-    # '&mkp MB5': Forward Click
+    '&caps_word': Caps Word
 
-  # zmk_combos:
-  #   combo_btclr:  {align: bottom}
-  #   combo_undo:   {align: bottom}
-  #   combo_mouse:  {align: bottom}
-  #   combo_semi:   {align: bottom}
-  #   combo_winq:   {align: top, w: 36}
-  #   combo_capswd: {draw_separate: true}
-  #   combo_lpar:   {draw_separate: true}
-  #   combo_rpar:   {draw_separate: true}
-  #   combo_esc:    {draw_separate: true}
-  #   combo_ret:    {draw_separate: true}
-  #   combo_lock:   {draw_separate: true}
-  #   combo_indbat: {align: top, o: 0.25}
-  #   combo_indcon: {align: top}
+    '&mmv MOVE_UP': Mouse ↑
+    '&mmv MOVE_DOWN': Mouse ↓
+    '&mmv MOVE_LEFT': Mouse ←
+    '&mmv MOVE_RIGHT': Mouse →
+    '&msc SCRL_UP': Scroll ↑
+    '&msc SCRL_DOWN': Scroll ↓
+    '&msc SCRL_LEFT': Scroll ←
+    '&msc SCRL_RIGHT': Scroll →
+
+    '&mkp LCLK': Left Click
+    '&mkp RCLK': Right Click
+    '&mkp MB3': Middle Click
+    '&mkp MB4': Back Click
+    '&mkp MB5': Forward Click
+
+  zmk_combos:
+    combo_mouse:  {align: bottom}
+    combo_undo:   {align: bottom}
+    combo_semi:   {align: bottom}
+    combo_capswd: {draw_separate: true}
+    combo_caps:   {draw_separate: true}
+    combo_ret:    {draw_separate: true}
+    combo_lock:   {draw_separate: true}
+    combo_bslh:   {draw_separate: true}
+    combo_pipe:   {draw_separate: true}
 
   zmk_keycode_map: # convert keycode to another representation
     # custom mappings
@@ -88,6 +85,9 @@ parse_config:
     LC(C): Copy
     LC(X): Cut
     LC(LS(V)): Paste
+    LC(Y): Redo
+    LG(L): Lock
+    LG(R): Rofi
 
     # defaults
     AMPERSAND: '&'

@@ -9,6 +9,7 @@
 ## General Principles
 - usage of [**Homerow Mods**](#homerow-mods-(hrm))
 - keep [thumb health](#thumb-health) in mind
+- trying to work with 34 keys for less thumb responsibilities
 - **combos**:
     - only use combos with multiple fingers (horizontal combos)
     - try to avoid pinkies
@@ -16,6 +17,8 @@
 - support **left hand only** usage
     - combos on left hand side that work well with right-handed mouse usage (cut, copy, paste, esc)
     - common shortcuts and desktop operations
+    - mostly covered by `NAV` layer
+- Miryoku-style layers (mods on same side but with more functions on the same-side half)
 
 ### Thumb Health
 - place only two to three keys in arc thumb naturally sweeps
