@@ -7,7 +7,7 @@
 - ~[Dactyl Manuform](https://github.com/abstracthat/dactyl-manuform)~ - WIP
 
 ## Homerow Mods (HRM)
-> see an awesome explaination at [urob - zmk-config](https://github.com/urob/zmk-config)
+> see an awesome explaination at [urob - zmk-config](https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods)
 - can lead to misfires on inconsistent typing speeds
 - zmk's balanced flavor: produces `hold` if another key is pressed & released within `tapping-term` -> don't need to wait for `tapping-term`
 - `require-prior-idle-ms`: solves typing delay by resolve HRM as `tap` when tapped shortly after another key has been tapped
@@ -18,7 +18,7 @@
 
 ### Example
 ```C++
-// adapt these to your keyboard (0 is upper left -> columns -> rows)
+// adapt these to your keymap (0 is upper left -> columns -> rows)
 #define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 
 #define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29
 #define THUMBS 30 31 32 33 34 35

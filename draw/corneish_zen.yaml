@@ -164,7 +164,7 @@ layers:
   - F5
   - F6
   - {t: ▽, type: trans}
-  - '&tog_on 5'
+  - QWE On
   - Shift
   - Ctrl
   - Alt
@@ -174,7 +174,7 @@ layers:
   - F2
   - F3
   - {t: ▽, type: trans}
-  - '&tog_off 5'
+  - QWE Off
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

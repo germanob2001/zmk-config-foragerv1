@@ -9,6 +9,9 @@ parse_config:
     '&bt BT_SEL 3': BT 4
     '&bt BT_SEL 4': BT 5
 
+    '&tog_on QWE': QWE On
+    '&tog_off QWE': QWE Off
+
     # '&mmv MOVE_UP': Mouse ↑
     # '&mmv MOVE_DOWN': Mouse ↓
     # '&mmv MOVE_LEFT': Mouse ←

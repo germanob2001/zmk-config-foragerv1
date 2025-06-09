@@ -824,7 +824,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(420, 111)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">&amp;tog_on</tspan><tspan x="0" dy="1.2em">5</tspan>
+<tspan x="0" dy="-0.6em">QWE</tspan><tspan x="0" dy="1.2em">On</tspan>
 </text>
 </g>
 <g transform="translate(476, 102)" class="key keypos-16">
@@ -866,7 +866,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(420, 167)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 88%">&amp;tog_off</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">5</tspan>
+<tspan x="0" dy="-0.6em">QWE</tspan><tspan x="0" dy="1.2em">Off</tspan>
 </text>
 </g>
 <g transform="translate(476, 158)" class="key trans keypos-26">
