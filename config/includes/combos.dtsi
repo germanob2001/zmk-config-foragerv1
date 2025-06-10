@@ -21,6 +21,7 @@
     compatible = "zmk,combos";
 
     // function keys
+    COMBO(tab,    &kp TAB,       RB1 RB2,     COL QWE SYM,  40, 100)
     COMBO(bspc,   &kp BSPC,      RM1 RM2,     COL QWE SYM,  40, 100)
     COMBO(ret,    &kp RET,       LM3 LM2 LM1, COL QWE SYM,  40,   0)
 

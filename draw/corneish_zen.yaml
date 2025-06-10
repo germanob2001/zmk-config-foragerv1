@@ -33,8 +33,8 @@ layers:
   - /
   - ''
   - {t: Esc, h: NAV}
-  - {t: ↹, h: NUM}
-  - {t: ␣, h: SYM}
+  - {t: ␣, h: NUM}
+  - {t: Shift, h: SYM}
   - {t: ⏎, h: FUN}
   - ''
   QWE:
@@ -70,8 +70,8 @@ layers:
   - /
   - ''
   - {t: Esc, h: NAV}
-  - {t: ↹, h: NUM}
-  - {t: ␣, h: SYM}
+  - {t: ␣, h: NUM}
+  - {t: Shift, h: SYM}
   - {t: ⏎, h: FUN}
   - ''
   NAV:
@@ -108,7 +108,7 @@ layers:
   - ''
   - {type: held}
   - ''
-  - ␣
+  - {t: Shift, h: sticky}
   - ⏎
   - ''
   NUM:
@@ -145,11 +145,11 @@ layers:
   - ''
   - ''
   - {type: held}
-  - ␣
+  - {t: Shift, h: sticky}
   - ⏎
   - ''
   MSE: ['', '', '', '', '', Scroll ←, Scroll ↓, Scroll ↑, Scroll →, '', Gui, Alt, Ctrl, Shift, '', Mouse ←, Mouse ↓, Mouse ↑, Mouse →, '', '', '', '', '', '', Back
-      Click, Middle Click, '', Forward Click, '', '', Esc, ↹, Left Click, Right Click, '']
+      Click, Middle Click, '', Forward Click, '', '', Esc, ␣, Left Click, Right Click, '']
   SYM:
   - '!'
   - '@'
@@ -183,7 +183,7 @@ layers:
   - ''
   - ''
   - Esc
-  - ↹
+  - ␣
   - {type: held}
   - ''
   - ''
@@ -220,11 +220,14 @@ layers:
   - QWE Off
   - ''
   - Esc
-  - ↹
+  - ␣
   - ''
   - {type: held}
   - ''
 combos:
+- p: [26, 27]
+  k: ↹
+  l: [COL, QWE, SYM]
 - p: [16, 17]
   k: ⌫
   l: [COL, QWE, SYM]
