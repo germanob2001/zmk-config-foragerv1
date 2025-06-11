@@ -81,6 +81,8 @@ parse_config:
 
     LC(TAB): Tab →
     LC(LS(TAB)): Tab ←
+    LC(W): Tab Close
+    LC(T): Tab Open
     LC(Z): Undo
     LC(C): Copy
     LC(X): Cut

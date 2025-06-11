@@ -75,11 +75,11 @@ layers:
   - {t: ⏎, h: FUN}
   - ''
   NAV:
-  - ''
+  - Rofi
+  - Tab Close
   - Tab ←
   - Tab →
-  - Ctl+W
-  - Rofi
+  - Tab Open
   - ''
   - Page ↓
   - Page ↑
