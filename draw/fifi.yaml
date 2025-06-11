@@ -268,7 +268,7 @@ combos:
   l: [COL, QWE, SYM]
 - p: [11, 12, 13]
   k: ⏎
-  l: [COL, QWE, SYM]
+  l: [COL, QWE]
   draw_separate: true
 - p: [27, 28]
   k: ;
