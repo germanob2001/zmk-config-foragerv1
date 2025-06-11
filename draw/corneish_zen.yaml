@@ -33,8 +33,8 @@ layers:
   - /
   - ''
   - {t: Esc, h: NAV}
-  - {t: ␣, h: NUM}
-  - {t: Shift, h: SYM}
+  - {t: Shift, h: NUM}
+  - {t: ␣, h: SYM}
   - {t: ⏎, h: FUN}
   - ''
   QWE:
@@ -70,8 +70,8 @@ layers:
   - /
   - ''
   - {t: Esc, h: NAV}
-  - {t: ␣, h: NUM}
-  - {t: Shift, h: SYM}
+  - {t: Shift, h: NUM}
+  - {t: ␣, h: SYM}
   - {t: ⏎, h: FUN}
   - ''
   NAV:
@@ -108,7 +108,7 @@ layers:
   - ''
   - {type: held}
   - ''
-  - {t: Shift, h: sticky}
+  - ␣
   - ⏎
   - ''
   NUM:
@@ -145,11 +145,46 @@ layers:
   - ''
   - ''
   - {type: held}
-  - {t: Shift, h: sticky}
+  - ␣
   - ⏎
   - ''
-  MSE: ['', '', '', '', '', Scroll ←, Scroll ↓, Scroll ↑, Scroll →, '', Gui, Alt, Ctrl, Shift, '', Mouse ←, Mouse ↓, Mouse ↑, Mouse →, '', '', '', '', '', '', Back
-      Click, Middle Click, '', Forward Click, '', '', Esc, ␣, Left Click, Right Click, '']
+  MSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scroll ←
+  - Scroll ↓
+  - Scroll ↑
+  - Scroll →
+  - ''
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
+  - ''
+  - Mouse ←
+  - Mouse ↓
+  - Mouse ↑
+  - Mouse →
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Back Click
+  - Middle Click
+  - ''
+  - Forward Click
+  - ''
+  - ''
+  - Esc
+  - {t: Shift, h: sticky}
+  - Left Click
+  - Right Click
+  - ''
   SYM:
   - '!'
   - '@'
@@ -183,7 +218,7 @@ layers:
   - ''
   - ''
   - Esc
-  - ␣
+  - {t: Shift, h: sticky}
   - {type: held}
   - ''
   - ''
@@ -220,7 +255,7 @@ layers:
   - QWE Off
   - ''
   - Esc
-  - ␣
+  - {t: Shift, h: sticky}
   - ''
   - {type: held}
   - ''
