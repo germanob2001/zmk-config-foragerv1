@@ -89,7 +89,6 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>; <- optional
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
@@ -100,7 +99,6 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>; <- optional
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
@@ -117,6 +115,7 @@
 - false negatives (cross-hand): reduce `require-prior-idle-ms`
 - false positives (same-hand): increase tapping-term-ms
 - false positives (cross-hand): increase require-prior-idle-ms (or set flavor to `tap-preferred`, which requires holding HRMs past tapping term to activate)
+- deactivate `quick-tap-ms` if you have problems with your layers (e.g. layer on *space* hold after pressing *space)
 
 ## Generate locally for debugging
 - `keymap -c draw/config.yaml parse -z config/<kb>.keymap > <kb>_keymap.yaml`
