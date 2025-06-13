@@ -89,7 +89,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <175>; <- optional
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
@@ -100,7 +100,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <175>; <- optional
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
