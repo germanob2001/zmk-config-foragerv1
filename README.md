@@ -13,7 +13,6 @@
 - **combos**:
     - only use combos with multiple fingers (horizontal combos)
     - try to avoid pinkies
-    - `require-prior-idle-ms` solves the issue of combo misfires, even on the home row
 - support **left hand only** usage
     - combos on left hand side that work well with right-handed mouse usage (cut, copy, paste, esc)
     - common shortcuts and desktop operations
@@ -31,15 +30,50 @@
 - try to put heavier loads on left thumb instead of right thumb (smartphone usage)
 - sources can be found in [References](#references)
 
+## Keymap
+> keymap automatically drawn with [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
+![Keymap](./draw/fifi.svg?raw=true "Keymap")
+
 ## Homerow Mods (HRM)
-> see an awesome explaination at [urob - zmk-config](https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods)
+> Read [this](https://precondition.github.io/home-row-mods) post by precondition to understand
+> further sources can be found in [References](#references)
+> images are all taken from the ZMK documentation
+
+### Problems with Naive HRM
+- require some difficult timing to function properly
+- hold longer than `tapping-term-ms` to produce a modifier key
+- hold less than `tapping-term-ms` to produce a normal keypress
+- for them to function properly consistent typing speeds are required 
 - can lead to misfires on inconsistent typing speeds
-- zmk's balanced flavor: produces `hold` if another key is pressed & released within `tapping-term` -> don't need to wait for `tapping-term`
-- `require-prior-idle-ms`: solves typing delay by resolve HRM as `tap` when tapped shortly after another key has been tapped
-- positional hold-tap: HRM always resolves as `tap` if next key is on same side of keyboard -> solves rolling keys
-- `hold-trigger-on-release`: allow combination of modifiers on same hand with positional hold-tap
-- `tapping-term`: don't set to infinity to be able to use modifier without another key or mod with alpha-key on same hand
-- **shift**: shifting alphas may conflict with `require-prior-idle-ms` for fast typers -> works best with dedicated shift key (e.g. sticky shift on home thumb)
+- ![hold_tap](./assets/hold_tap.svg?raw=true "Hold Tap")
+
+### Interrupt Flavors for Hold-Tap
+> make sure to understand these cases for own your own trouble-shooting
+- `hold-preferred`: triggers *hold* after `tapping-term-ms` or on another *keypress*
+- `balanced`: triggers *hold* after `tapping-term-ms` or if another *keypress* is *pressed* and *released* while hold-tap is *held*
+- `tap-preferred`: triggers *hold* after `tapping-term-ms` has expired 
+- ![interrupt_flavors](./assets/interrupt_flavors.svg?raw=true "Interrupt Flavors")
+
+### Variables for Hold-Tap explained
+- `tapping-term-ms`: defines how long a key must be pressed to trigger a *hold*
+- `quick-tap-ms`: *tap* into *tap*/*hold* again within `quick-tap-ms` always leads to *tap* (good for spamming keys)
+- `require-prior-idle-ms`: 
+    - hold-tap key pressed within `require-prior-idle-ms` of another non-modifier key always leads to *tap*
+    - disables hold-tap when typing quickly and removes input delay
+    - perfect solution for issues with rolling keys on homerow
+- positional hold-tap:
+    - `hold-trigger-key-positions`: enables the feature and defines keys that do not cancel *hold*
+    - if you press any key *not listed in* `hold-trigger-key-positions` a *tap* will be produced (before `tapping-term-ms` expires)
+    - useful for homerow mods as only cross-hand combinations can trigger *hold* (before `tapping-term-ms` expires)
+    - `hold-trigger-on-release`: produce a *tap* when *released* not *pressed* -> set this with home row mods to combine same-hand modifiers
+
+### Final Setup (based on [urob - zmk-config](https://github.com/urob/zmk-config))
+- use `balanced` flavor to be independent of `tapping-term-ms`
+- set `require-prior-idle-ms` to solve typing delay
+- set `hold-trigger-key-positions` to solve rolling keys
+- set `hold-trigger-on-release` to still allow combinations of modifiers on same hand
+- don't set `tapping-term-ms` to infinity to still use modifier without another key or mod with alpha-key on same hand
+- setup a *sticky shift* key - shifting may otherwise conflict with `require-prior-idle-ms` for fast typers
 
 ### Example
 ```C++
@@ -84,18 +118,17 @@
 - false positives (same-hand): increase tapping-term-ms
 - false positives (cross-hand): increase require-prior-idle-ms (or set flavor to `tap-preferred`, which requires holding HRMs past tapping term to activate)
 
-## Keymap
-> keymap automatically drawn with [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
-![Keymap](./draw/fifi.svg?raw=true "Keymap")
-
-### Generate locally for debugging
+## Generate locally for debugging
 - `keymap -c draw/config.yaml parse -z config/<kb>.keymap > <kb>_keymap.yaml`
 - `keymap -c draw/config.yaml draw -d boards/shields/<kb>/<kb>.dtsi <kb>_keymap.yaml > <kb>_keymap.svg`
     - `-d` is only required if it's a custom shield
 
-### Custom shields
+## Custom shields
 - make sure to add a [`keys` property to your physical layout for key positions](https://zmk.dev/docs/development/hardware-integration/physical-layouts#optional-keys-property)
 - see [draw-keymaps.yml](./.github/workflows/draw-keymaps.yml) for workflow setup for custom shields
+
+## Known Issues
+- [Using combos on the homerow can interfere with trying to use multiple modifiers](https://github.com/zmkfirmware/zmk/issues/544)
 
 ## References
 - zmk-config
@@ -108,6 +141,8 @@
 - Layout
     - [manna-harbour - Miryoku](https://github.com/manna-harbour/miryoku_zmk)
     - [Original Home Row Mods Post](https://precondition.github.io/home-row-mods)
+    - [urob - Timeless Homerow Mods](https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods)
+    - [ZMK - Hold Tap](https://zmk.dev/docs/keymaps/behaviors/hold-tap)
 - Thumb Health
     - [Getreuer - Blog Post on Thumb Health with Examples](https://getreuer.info/posts/keyboards/thumb-ergo/index.html#countermeasures)
     - [Study - Smartphone Use - Hand Pain](https://pubmed.ncbi.nlm.nih.gov/39044247/)
