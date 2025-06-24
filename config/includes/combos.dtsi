@@ -16,8 +16,8 @@
     __VA_ARGS__ \
   };
 
-#define COMBO_TERM_FAST 30
-#define COMBO_TERM_SLOW 60
+#define COMBO_TERM_FAST 40
+#define COMBO_TERM_SLOW 80
 
 #define COMBO_IDLE_FAST 150
 #define COMBO_IDLE_SLOW 50
