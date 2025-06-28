@@ -5,6 +5,7 @@
 - [Fifi (own shield)](https://github.com/raychengy/fifi_split_keeb)
 - [Corne Ish Zen](https://lowprokb.ca/products/corne-ish-zen)
 - [Forager](https://github.com/carrefinho/forager)
+- [Urchin](https://github.com/duckyb/urchin)
 - ~[Dactyl Manuform](https://github.com/abstracthat/dactyl-manuform)~ - WIP
 
 ## General Principles
@@ -33,7 +34,7 @@
 
 ## Keymap
 > keymap automatically drawn with [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
-![Keymap](./draw/fifi.svg?raw=true "Keymap")
+![Keymap](./draw/forager.svg?raw=true "Keymap")
 
 ## Homerow Mods (HRM)
 > Read [this](https://precondition.github.io/home-row-mods) post by precondition to understand

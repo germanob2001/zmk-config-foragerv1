@@ -2,6 +2,11 @@
 #include <physical_layouts.dtsi>
 
 / {
+  chosen {
+    zmk,kscan = &kscan0;
+    zmk,physical-layout = &default_layout;
+  };
+
   kscan0: kscan0 {
     compatible = "zmk,kscan-gpio-matrix";
     diode-direction = "col2row";
@@ -15,7 +20,7 @@
     ;
   };
   
-  default_transform: keymap_transform0 {
+  default_transform: keymap_transform_0 {
     compatible = "zmk,matrix-transform";
     columns = <10>;
     rows = <4>;
@@ -28,11 +33,11 @@
     >;
   };
 
-  physical_layout0: physical_layout_0 {
+  default_layout: physical_layout_0 {
     compatible = "zmk,physical-layout";
     display-name = "Default Layout";
-    kscan = <&kscan0>; // could also move this to chosen as all physical layouts use the same
     transform = <&default_transform>;
+
     keys  //                   w   h    x    y     rot    rx    ry
       = <&key_physical_attrs 100 100    0   99       0     0     0>
       , <&key_physical_attrs 100 100  100   33       0     0     0>
@@ -71,9 +76,5 @@
       , <&key_physical_attrs 100 100  750  333  (-1200)  850   412>
       , <&key_physical_attrs 100 100  850  333       0     0     0>
     ;
-  };
-
-  chosen {
-    zmk,physical-layout = &physical_layout0;
   };
 };
