@@ -1,0 +1,5 @@
+config SHIELD_URCHIN_LEFT
+  def_bool $(shields_list_contains,urchin_left)
+
+config SHIELD_URCHIN_RIGHT
+  def_bool $(shields_list_contains,urchin_right)
