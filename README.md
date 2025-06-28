@@ -4,6 +4,7 @@
 ## Supported Keyboards
 - [Fifi (own shield)](https://github.com/raychengy/fifi_split_keeb)
 - [Corne Ish Zen](https://lowprokb.ca/products/corne-ish-zen)
+- [Forager](https://github.com/carrefinho/forager)
 - ~[Dactyl Manuform](https://github.com/abstracthat/dactyl-manuform)~ - WIP
 
 ## General Principles
