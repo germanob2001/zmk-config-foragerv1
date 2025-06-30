@@ -10,6 +10,6 @@ include:
   - board: corneish_zen_v2_left
   - board: corneish_zen_v2_right
   - board: seeeduino_xiao_ble
-    shield: forager_left rgbled_adapter
+    shield: forager_left
   - board: seeeduino_xiao_ble
-    shield: forager_right rgbled_adapter
+    shield: forager_right
