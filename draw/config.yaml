@@ -86,7 +86,7 @@ parse_config:
     LC(Z): Undo
     LC(C): Copy
     LC(X): Cut
-    LS(V): Paste
+    LC(V): Paste
     LC(LS(V)): Paste
     LC(Y): Redo
     LG(L): Lock
